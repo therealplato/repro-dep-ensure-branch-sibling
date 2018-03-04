@@ -5,5 +5,5 @@ import (
 )
 
 func Exported(fs logrus.Fields) {
-	logrus.WithFields(fs).Info("dependant")
+	logrus.WithFields(fs).Info("updated_dependant")
 }
