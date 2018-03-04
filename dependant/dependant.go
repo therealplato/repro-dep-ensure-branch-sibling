@@ -1,3 +1,9 @@
 package dependant
 
-var Exported = "from master"
+import (
+	"github.com/sirupsen/logrus"
+)
+
+func Exported(fs logrus.Fields) {
+	logrus.WithFields(fs).Info("dependant")
+}
